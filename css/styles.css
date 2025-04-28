@@ -1,0 +1,70 @@
+/* Base styling */
+* {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    --main-color: #4413d9;
+    /* --light-color: #7bb0c4;
+    --dark-color: #362b48; */
+    --light-color: #ffff;
+    --dark-color: #362b48;
+  }
+
+  /* Sticky Navbar */
+  .navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-size: 1.5rem;
+    background-color: var(--dark-color);
+    padding: 0.5rem 2rem;
+  }
+
+  /* Title and links */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease, transform 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: #46395b;
+  }
+
+  /* Hover effect */
+  .navbar a:hover {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    border-radius: 0.5rem;
+    /* box-shadow: 0 0.2rem 0.2rem #000; */
+  }
+
+  /* Title style */
+  .navbar-title {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  /* Link container */
+  .navbar-links {
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .main-top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/home_background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 15% 0rem;
+    color: #ffff;
+    text-align: center;
+  }
+
+  .main-top h1 {
+    font-size: 5rem;
+  }
