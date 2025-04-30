@@ -5,7 +5,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    --main-color: #4413d9;
+    --main-color: #5D3BE8;
     /* --light-color: #7bb0c4;
     --dark-color: #362b48; */
     --light-color: #ffff;
@@ -27,7 +27,7 @@
   }
 
   /* Title and links */
-  .navbar a {
+  .navbar a, #main-download {
     color: white;
     text-decoration: none;
     transition: 0.2s ease, transform 0.3s ease;
@@ -36,35 +36,51 @@
     background-color: #46395b;
   }
 
-  /* Hover effect */
-  .navbar a:hover {
+  .navbar a:hover, #download-ico:hover, #main-download:hover {
     color: var(--dark-color);
     background-color: var(--light-color);
     border-radius: 0.5rem;
-    /* box-shadow: 0 0.2rem 0.2rem #000; */
   }
 
-  /* Title style */
+  #download-ico {
+    padding: 0;
+    background-color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-download {
+    display: inline;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: var(--main-color);
+  }
+
   .navbar-title {
     font-weight: bold;
     font-size: 2rem;
   }
 
-  /* Link container */
   .navbar-links {
     display: flex;
     margin-left: 1rem;
+  }
+
+  .navbar-links img {
+    height: 80%;
+    margin: 0;
   }
 
   .main-top {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/home_background.jpg');
     background-size: cover;
     background-position: center;
-    padding: 15% 0rem;
+    padding: 10% 0rem;
     color: #ffff;
     text-align: center;
   }
 
   .main-top h1 {
-    font-size: 5rem;
+    font-size: 7rem;
+    font-weight: bold;
   }
