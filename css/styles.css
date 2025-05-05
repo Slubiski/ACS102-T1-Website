@@ -75,7 +75,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/home_background.jpg');
     background-size: cover;
     background-position: center;
-    padding: 10% 0rem;
+    padding: 5% 0rem;
     color: #ffff;
     text-align: center;
   }
@@ -83,4 +83,13 @@
   .main-top h1 {
     font-size: 7rem;
     font-weight: bold;
+  }
+
+  .main-top #arr_down {
+    transition: 0.2s ease, transform 0.3s ease;
+    scroll-behavior: smooth;
+  }
+
+  .main-top #arr_down:hover {
+    transform: translateY(1);
   }
