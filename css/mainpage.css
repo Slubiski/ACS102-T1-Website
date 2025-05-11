@@ -1,0 +1,72 @@
+#main-top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/home_background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 5% 0rem;
+  color: #ffff;
+  text-align: center;
+}
+
+#main-top * {
+    margin-bottom: 3rem;
+}
+
+#main-top h1 {
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+#main-top h2 {
+    font-size: 2rem;
+}
+
+#main-top #arr_down{
+  transition: transform 0.3s ease;
+}
+
+#main-top #arr_down:hover {
+  transform: translateY(0.5rem);
+}
+
+#main-mid {
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+#main-mid article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#main-mid h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.main-mid-element {
+    flex: 1 1 450px;
+}
+
+#main-low {
+    margin-top: 5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#main-low .card {
+  flex: 1 1 250px;
+  margin: 1rem 1rem;
+}
+
+#main-low .card img {
+  width: 100%;
+}
+
+#main-low .arr_right {
+  height: 4rem;
+}
