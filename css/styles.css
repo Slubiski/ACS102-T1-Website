@@ -12,6 +12,8 @@
   --dark-color: #362b48;
   --card-color: #53456a;
   scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+  overscroll-behavior: none;
 }
 
 /* Sticky Navbar */
@@ -84,4 +86,12 @@
 
 .card:hover {
     box-shadow: 0.4rem 0.8rem 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--dark-color);
+  font-size: 0.9rem;
+  color: #fff;
 }
