@@ -1,3 +1,45 @@
+@media (min-width: 2560px) {
+  html {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 11px;
+  }
+}
+
 /* Base styling */
 * {
   margin: 0;
@@ -14,6 +56,7 @@
   scroll-behavior: smooth;
   scroll-padding-top: 3rem;
   overscroll-behavior: none;
+  box-sizing: border-box;
 }
 
 /* Sticky Navbar */
@@ -67,10 +110,12 @@
 .navbar-links {
   display: flex;
   margin-left: 1rem;
+  align-items: center;
 }
 
 .navbar-links img {
-  height: 80%;
+  height: 3rem;
+  padding: 0.2rem;
   margin: 0;
 }
 

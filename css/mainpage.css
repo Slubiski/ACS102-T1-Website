@@ -46,7 +46,8 @@
 }
 
 .main-mid-element {
-    flex: 1 1 450px;
+    flex: 1 1 20rem;
+    min-width: 0;
 }
 
 #main-low {
@@ -59,7 +60,7 @@
 }
 
 #main-low .card {
-  flex: 1 1 250px;
+  flex: 1 1 20rem;
   margin: 1rem;
 }
 
