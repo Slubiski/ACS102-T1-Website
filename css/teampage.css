@@ -20,6 +20,26 @@ article {
     margin: 1rem;
 }
 
-.card img {
+.card .image_cropper img {
     width: 100%;
+    height: auto;
+}
+
+.card .image_cropper {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 0 auto;
+}
+
+.card p {
+    margin-top: 0.5rem;
+}
+
+
+@media screen and (min-width: 769px) {
+
 }
