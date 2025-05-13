@@ -20,6 +20,7 @@ article {
     flex: 1 1 15rem;
     margin: 1rem;
     min-width: none;
+    max-width: 30%;
 }
 
 .card .image_cropper img {

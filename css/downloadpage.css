@@ -1,0 +1,23 @@
+main {
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+
+.download-half {
+    flex: 1 1 20rem;
+}
