@@ -1,0 +1,56 @@
+
+.sprints {
+    padding: 2rem 10rem;
+}
+
+.sprints h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.card {
+    padding: 2rem 4rem 2rem 2rem;
+    display: flex;
+    margin-bottom: 1.5rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card ul {
+    flex: 40%;
+    text-align: left;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.sprint-image {
+    overflow: hidden;
+}
+
+.sprint-image img {
+    width: auto;
+    height: 18rem;
+    float: right;
+    border: 5px solid var(--dark-color);
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .sprints{
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .sprint-image img{
+        height: 25rem;
+    }
+}
+
+
+
