@@ -17,10 +17,10 @@ article {
 }
 
 .card {
-    flex: 1 1 15rem;
+    flex: 1 1 20rem;
     margin: 1rem;
     min-width: none;
-    max-width: 30%;
+    /* max-width: 30%; */
 }
 
 .card .image_cropper img {
@@ -38,11 +38,11 @@ article {
     margin: 0 auto;
 }
 
-.card p {
-    margin-top: 0.5rem;
+.card h3 {
+    margin-top: 1rem;
 }
 
-
-@media screen and (min-width: 769px) {
-
+ul {
+    padding-left: 1rem;
+    /* list-style-position: inside; */
 }

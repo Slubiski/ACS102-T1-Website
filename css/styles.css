@@ -54,7 +54,7 @@
   --dark-color: #362b48;
   --card-color: #53456a;
   scroll-behavior: smooth;
-  scroll-padding-top: 3rem;
+  scroll-padding-top: 2rem;
   overscroll-behavior: none;
   box-sizing: border-box;
 }
@@ -74,7 +74,7 @@
 }
 
 /* Title and links */
-.navbar a, #main-download {
+.navbar a, .main-download {
   color: white;
   text-decoration: none;
   transition: 0.2s ease, transform 0.3s ease;
@@ -83,7 +83,7 @@
   background-color: #46395b;
 }
 
-.navbar a:hover, #download-ico:hover, #main-download:hover {
+.navbar a:hover, #download-ico:hover, .main-download:hover {
   color: var(--dark-color);
   background-color: var(--light-color);
   border-radius: 0.5rem;
@@ -96,7 +96,7 @@
   align-items: center;
 }
 
-#main-download {
+.main-download {
   padding: 1rem 2rem;
   font-size: 2rem;
   background-color: var(--main-color);
@@ -120,13 +120,14 @@
 }
 
 .card {
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1rem;
     background-color: var(--card-color);
     color: #ffff;
     font-size: 1.5rem;
     box-shadow: 0.2rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
     transition: 0.3s ease;
+    text-align: justify;
 }
 
 .card:hover {
@@ -137,6 +138,6 @@ footer {
   text-align: center;
   padding: 1rem;
   background-color: var(--dark-color);
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #fff;
 }
