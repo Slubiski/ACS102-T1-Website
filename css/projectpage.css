@@ -3,12 +3,6 @@
     padding: 2rem 10rem;
 }
 
-h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-}
-
 .card {
     padding: 2rem 4rem 2rem 2rem;
     display: flex;
