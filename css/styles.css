@@ -147,6 +147,10 @@ h1 {
   border-radius: 0.5rem;
 }
 
+.nobr {
+  white-space: nowrap;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
