@@ -3,12 +3,6 @@
     padding: 2rem 10rem;
 }
 
-.sprints h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-}
-
 .card {
     padding: 2rem 4rem 2rem 2rem;
     display: flex;
@@ -18,24 +12,27 @@
     justify-content: space-between;
 }
 
-.card ul {
-    flex: 40%;
+ul {
     text-align: left;
 }
 
-.card h2 {
-    margin-top: 0;
+h2 {
     margin-bottom: 0.5rem;
 }
 
 .sprint-image {
     overflow: hidden;
+    align-self: center;
 }
 
 .sprint-image img {
     width: auto;
-    height: 18rem;
+    height: 20rem;
     float: right;
+}
+
+.card div:first-child {
+    width: 32rem;
 }
 
 @media screen and (max-width: 768px) {
