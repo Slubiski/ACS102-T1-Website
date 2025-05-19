@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/deliverablespage.css">
+    <link rel="icon" href="/media/tab_icon.ico" type="image/x-icon">
+    <script src="../js/script.js"></script>
     <title>Quoridor</title>
 </head>
 <body>
@@ -59,11 +61,11 @@
                         <p>Example gameplay</p>
                     </div>
                     <div class="flex-deliverables-element">
-                        <img src="../media/gameover.png" class="flex-deliverables-element">
+                        <img src="../media/gameover.png" alt="Game over screen" class="flex-deliverables-element" onclick="openLightbox(this.src);">
                         <p>Game over screen</p>
                     </div>
                     <div class="flex-deliverables-element">
-                        <img src="../media/gameovergraph.png" class="flex-deliverables-element">
+                        <img src="../media/gameovergraph.png" alt="Game over graph" class="flex-deliverables-element" onclick="openLightbox(this.src);">
                         <p>Statistics graph after the game over screen</p>
                     </div>
                 </div>
@@ -84,7 +86,7 @@
                         </ul>
                     </div>
                     <div class="flex-deliverables-element">
-                        <img src="../media/website-beta.png" class="flex-deliverables-element">
+                        <img src="../media/website-beta.png" alt="Website concept" class="flex-deliverables-element" onclick="openLightbox(this.src);">
                         <p>Website main page design concept</p>
                     </div>
                 </div>
@@ -116,7 +118,7 @@
                     <div class="flex-deliverables-element">
                         <h3>Links:</h3>
                         <ul>
-                            <li><a href="http://10.134.178.11/">Quoridor website</a></li>
+                            <li><a href="http://10.134.178.11/">Quoridor website on server</a></li>
                         </ul>
                     </div>
                 </div>
@@ -130,11 +132,11 @@
                         <li>This change was made upon teacher request</li>
                     </ul>
                     <div class="flex-deliverables-element">
-                        <img src="../media/db_old.png" class="flex-deliverables-element">
+                        <img src="../media/db_old.png" alt="Old databse" class="flex-deliverables-element" onclick="openLightbox(this.src);">
                         <p>Old database ERD</p>
                     </div>
                     <div class="flex-deliverables-element">
-                        <img src="../media/db_new.png" class="flex-deliverables-element" id="tall-img">
+                        <img src="../media/db_new.png" alt="New database" class="flex-deliverables-element" id="tall-img" onclick="openLightbox(this.src);">
                         <p>New database ERD</p>
                     </div>
                 </div>
@@ -147,15 +149,15 @@
                         <li>The implementation led to some changes in the overall structure of the model, mainly the board class. Much of the existing code was refactored or removed.</li>
                     </ul>
                     <div class="flex-deliverables-element">
-                        <img src="../media/game_complexity.png" class="flex-deliverables-element">
+                        <img src="../media/game_complexity.png" alt="Game complexity comparison" class="flex-deliverables-element" onclick="openLightbox(this.src);">
                         <p>Quoridor's complexity compared to other well-known adversarial table-top games</p>
                     </div>
                     <div class="flex-deliverables-element">
-                        <img src="../media/boards.png" class="flex-deliverables-element">
+                        <img src="../media/boards.png" alt="Example visualization of the board" class="flex-deliverables-element" onclick="openLightbox(this.src);">
                         <p>Example graph representation of the board used for pathfinding</p>
                     </div>
                     <div class="flex-deliverables-element">
-                        <img src="../media/minimax_tree.png" class="flex-deliverables-element">
+                        <img src="../media/minimax_tree.png" alt="Example Minimax tree" class="flex-deliverables-element" onclick="openLightbox(this.src);">
                         <p>Example small Minimax game tree</p>
                     </div>
             </article>
@@ -173,11 +175,11 @@
                         <li>Created multi-platform executables</li>
                     </ul>
                     <div class="flex-deliverables-element">
-                        <img src="../media/game_current_version.png" class="flex-deliverables-element">
+                        <img src="../media/game_current_version.png" alt="Current version of the game" class="flex-deliverables-element" onclick="openLightbox(this.src);">
                         <p>The latest version of the game</p>
                     </div>
                     <div class="flex-deliverables-element">
-                        <img src="../media/download_page.png" class="flex-deliverables-element">
+                        <img src="../media/download_page.png" alt="Download page" class="flex-deliverables-element" onclick="openLightbox(this.src);">
                         <p>Download page</p>
                     </div>
                 </div>
@@ -198,5 +200,10 @@
     <footer>
         <p>&copy; 2025 Quoridor. All rights reserved.</p>
     </footer>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <span id="lightbox-close" onclick="closeLightbox(); event.stopPropagation();">&times;</span>
+        <img id="lightbox-img" onclick="event.stopPropagation()">
+    </div>
 </body>
 </html>

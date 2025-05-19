@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/projectpage.css">
+    <link rel="icon" href="/media/tab_icon.ico" type="image/x-icon">
+    <script src="../js/script.js"></script>
     <title>Quoridor</title>
 </head>
 <body>
@@ -39,7 +41,7 @@
                     </ul>
                 </div>
                 <div class="sprint-image">
-                    <img src="/media/Wireframe.png" alt="The wireframe of the game.">
+                    <img src="/media/Wireframe.png" alt="The wireframe of the game." onclick="openLightbox(this.src);">
                 </div>
             </article>
 
@@ -61,7 +63,7 @@
                     </ul>
                 </div>
                 <div class="sprint-image">
-                    <img src="/media/game_beta_version.png" alt="A screenshot of the beta version of the game, illustrating the many ways it was not yet complete">
+                    <img src="/media/game_beta_version.png" alt="A screenshot of the beta version of the game, illustrating the many ways it was not yet complete" onclick="openLightbox(this.src);">
                 </div>
             </article>
 
@@ -82,7 +84,7 @@
                     </ul>
                 </div>
                 <div class="sprint-image">
-                    <img src="/media/game_sprint3.png" alt="A screenshot of the game at the end of sprint 3. It shows a player winning by exploiting a bug in the AI.">
+                    <img src="/media/game_sprint3.png" alt="A screenshot of the game at the end of sprint 3. It shows a player winning by exploiting a bug in the AI." onclick="openLightbox(this.src);">
                 </div>
             </article>
 
@@ -99,7 +101,7 @@
                     </ul>
                 </div>
                 <div class="sprint-image">
-                    <img src="/media/game_current_version.png" alt="A screenshot of the current version of the game, showcasing improved visuals and a much smarter AI.">
+                    <img src="/media/game_current_version.png" alt="A screenshot of the current version of the game, showcasing improved visuals and a much smarter AI." onclick="openLightbox(this.src);">
                 </div>
             </article>
 
@@ -108,5 +110,10 @@
     <footer>
         <p>&copy; 2025 Quoridor. All rights reserved.</p>
     </footer>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <span id="lightbox-close" onclick="closeLightbox(); event.stopPropagation();">&times;</span>
+        <img id="lightbox-img" onclick="event.stopPropagation()">
+    </div>
 </body>
 </html>

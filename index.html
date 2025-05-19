@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mainpage.css">
     <link rel="icon" href="/media/tab_icon.ico" type="image/x-icon">
+    <script src="js/script.js"></script>
     <title>Quoridor</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
             <h2>A strategic maze-building race to the other side.</h2>
             <a href="html/download.html" class="main-download">Download</a>
             <br>
-            <a href="#main-mid"><img src="media/arr_down.svg" id="arr_down"></a>
+            <a href="#main-mid"><img src="media/arr_down.svg" alt="Down arrow" id="arr_down"></a>
         </section>
         <section id="main-mid">
             <h1>A beloved board game - made digital</h1>
@@ -45,21 +46,21 @@
         </section>
         <section id="main-low">
             <div class="card">
-                <img src="media/gamestart.png">
+                <img src="media/gamestart.png" alt="Photo of the starting position of the game" onclick="openLightbox(this.src);">
                 <p>
                     The game starts out with the player on the bottom of the screen and the AI on top. The game duration and number of walls left are visible at all times.
                 </p>
             </div>
-            <img src="media/arr_right.svg" class="arr_right">
+            <img src="media/arr_right.svg" alt="Right arrow" class="arr_right">
             <div class="card">
-                <img src="media/midgame.png">
+                <img src="media/midgame.png" alt="Photo of the game during play" onclick="openLightbox(this.src);">
                 <p>
                     You play in turns, moving or placing a wall.
                 </p>
             </div>
-            <img src="media/arr_right.svg" class="arr_right">
+            <img src="media/arr_right.svg" alt="Right arrow" class="arr_right">
             <div class="card">
-                <img src="media/gameover.png">
+                <img src="media/gameover.png" alt="Photo of the game over screen"  onclick="openLightbox(this.src);">
                 <p>
                     At the end of the game the player can see various statistics about the match.
                 </p>
@@ -69,5 +70,10 @@
     <footer>
         <p>&copy; 2025 Quoridor. All rights reserved.</p>
     </footer>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <span id="lightbox-close" onclick="closeLightbox(); event.stopPropagation();">&times;</span>
+        <img id="lightbox-img" onclick="event.stopPropagation()">
+    </div>
 </body>
 </html>
