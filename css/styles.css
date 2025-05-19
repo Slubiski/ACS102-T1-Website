@@ -134,6 +134,11 @@
     box-shadow: 0.4rem 0.8rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 
+.card img, video {
+  border: 0.4rem solid var(--dark-color);
+  border-radius: 0.5rem;
+}
+
 footer {
   text-align: center;
   padding: 1rem;

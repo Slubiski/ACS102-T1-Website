@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
-    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+    <link rel="stylesheet" href="/css/deliverablespage.css">
     <title>Quoridor</title>
 </head>
 <body>
@@ -21,9 +21,178 @@
         </div>
     </nav>
     <main>
-        <section class="main-top">
-            <h1>Deliverables</h1>
-            <h3>This is our deliverables idk</h3>
+        <h1>Deliverables</h1>
+        <section>
+            <h2>Sprint 3</h2>
+            <article class="card">
+                <h3>Programming: Game</h3>
+                <div class="flex-deliverables">
+                    <ul class="flex-deliverables-element">
+                        <li>Rewiring the model interface for the visuals and fully connecting screens to the model</li>
+                        <li>
+                            Implemented input validation:
+                            <ul>
+                                <li>Walls can't overlap</li>
+                                <li>Players can't go through walls</li>
+                                <li>Players can't place more walls than the maximum</li>
+                                <li>Players can't be fully blocked from winning</li>
+                            </ul>
+                        </li>
+                        <li>Refined the UI: Displaying time, player name, and number of walls remaining</li>
+                        <li>Completed the game over screen and graph, displaying outliers in the game statistics</li>
+                        <li>Implemented saving and loading for game states</li>
+                        <li>Wrote the javadoc documentation</li>
+                        <li>Testing and debugging</li>
+                    </ul>
+                    <div class="flex-deliverables-element">
+                        <h3>Links:</h3>
+                        <ul>
+                            <li><a href="https://gitlab.com/kdg-ti/integration-1.2/2024-2025/acs102-t1/ACS102-T1-Game">GitLab repository</a></li>
+                            <li><a href="../downloads/quoridor-javadoc.zip" download>Quoridor Javadoc</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex-deliverables-element">
+                        <video width="100%" autoplay muted loop class="flex-deliverables-element">
+                            <source src="../media/GameplayFast.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>Example gameplay</p>
+                    </div>
+                    <div class="flex-deliverables-element">
+                        <img src="../media/gameover.png" class="flex-deliverables-element">
+                        <p>Game over screen</p>
+                    </div>
+                    <div class="flex-deliverables-element">
+                        <img src="../media/gameovergraph.png" class="flex-deliverables-element">
+                        <p>Statistics graph after the game over screen</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <h3>Programming: Website</h3>
+                <div class="flex-deliverables">
+                    <ul class="flex-deliverables-element">
+                        <li>Beta version of the website</li>
+                        <li>Design concept</li>
+                        <li>First steps with navbar and main page</li>
+                    </ul>
+                    <div class="flex-deliverables-element">
+                        <h3>Links: </h3>
+                        <ul>
+                            <li><a href="https://gitlab.com/kdg-ti/integration-1.2/2024-2025/acs102-t1/ACS102-T1-Website">GitLab repository</a></li>
+                            <li><a href="https://www.figma.com/design/cpYqjuDjJYXeVyxTWEXtUf/ACS102-T1-Website?node-id=0-1&t=z0X0CNOJleyupX5s-1">Design concept</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex-deliverables-element">
+                        <img src="../media/website-beta.png" class="flex-deliverables-element">
+                        <p>Website main page design concept</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <h3>Infrastructure: DB to CSV script</h3>
+                <div class="flex-deliverables">
+                    <ul class="flex-deliverables-element">
+                        <li>Created a script that turns data from the database into comma-separated values format</li>
+                        <li>It requires creating a separate user on the system level in order to work</li>
+                        <li>The query could be passed through a separate file</li>
+                    </ul>
+                    <div class="flex-deliverables-element">
+                        <h3>Links:</h3>
+                        <ul>
+                            <li><a href="https://docs.google.com/document/d/1_E1b_jXkd8GV2ic1wQQ-k8dlJOd4MN6275AIVejjlak/edit?usp=sharing">Document</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <h3>Infrastructure: Website deployment</h3>
+                <div class="flex-deliverables">
+                    <ul class="flex-deliverables-element">
+                        <li>Transferred HTML, CSS and media files to the Apache server</li>
+                        <li>Kept the required files structure</li>
+                        <li>Ensured the required permissions, owners and file encoding</li>
+                    </ul>
+                    <div class="flex-deliverables-element">
+                        <h3>Links:</h3>
+                        <ul>
+                            <li><a href="http://10.134.178.11/">Quoridor website</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <h3>Data & AI: Database redesign</h3>
+                <div class="flex-deliverables">
+                    <ul class="flex-deliverables-element">
+                        <li>Old DB had only 1 table, storing only the most essential data</li>
+                        <li>New DB has 3 tables, storing more, normalized data</li>
+                        <li>This change was made upon teacher request</li>
+                    </ul>
+                    <div class="flex-deliverables-element">
+                        <img src="../media/db_old.png" class="flex-deliverables-element">
+                        <p>Old database ERD</p>
+                    </div>
+                    <div class="flex-deliverables-element">
+                        <img src="../media/db_new.png" class="flex-deliverables-element" id="tall-img">
+                        <p>New database ERD</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <h3>Data & AI: Rule Based Intelligence</h3>
+                <div class="flex-deliverables">
+                    <ul class="flex-deliverables-element">
+                        <li>Implemented the rule based system along with a minimax algorithm for advanced board state evaluation and decision making. The end product is a model strong enough to beat inexperienced players.</li>
+                        <li>The implementation led to some changes in the overall structure of the model, mainly the board class. Much of the existing code was refactored or removed.</li>
+                    </ul>
+                    <div class="flex-deliverables-element">
+                        <img src="../media/game_complexity.png" class="flex-deliverables-element">
+                        <p>Quoridor's complexity compared to other well-known adversarial table-top games</p>
+                    </div>
+                    <div class="flex-deliverables-element">
+                        <img src="../media/boards.png" class="flex-deliverables-element">
+                        <p>Example graph representation of the board used for pathfinding</p>
+                    </div>
+                    <div class="flex-deliverables-element">
+                        <img src="../media/minimax_tree.png" class="flex-deliverables-element">
+                        <p>Example small Minimax game tree</p>
+                    </div>
+            </article>
+        </section>
+        <section>
+            <h2>Sprint 4</h2>
+            <article class="card">
+                <h3>Programming: Game</h3>
+                <div class="flex-deliverables">
+                    <ul class="flex-deliverables-element">
+                        <li>Modified the front end using stylesheets and improved javaFx layout for better UI and UX</li>
+                        <li>Refactored the code to improve code quality, readability, and to avoid common mistakes</li>
+                        <li>Added difficulty options</li>
+                        <li>Modified or added extra documentation</li>
+                        <li>Created multi-platform executables</li>
+                    </ul>
+                    <div class="flex-deliverables-element">
+                        <img src="../media/game_current_version.png" class="flex-deliverables-element">
+                        <p>The latest version of the game</p>
+                    </div>
+                    <div class="flex-deliverables-element">
+                        <img src="../media/download_page.png" class="flex-deliverables-element">
+                        <p>Download page</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <h3>Programming: Website</h3>
+                <div class="flex-deliverables">
+                    <ul class="flex-deliverables-element">
+                        <li>Modern design</li>
+                        <li>Clean HTML & CSS</li>
+                        <li>Hover animations</li>
+                        <li>Fully responsive</li>
+                    </ul>
+                </div>
+            </article>
         </section>
     </main>
     <footer>

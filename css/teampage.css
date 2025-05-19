@@ -26,6 +26,7 @@ article {
 .card .image_cropper img {
     width: 100%;
     height: auto;
+    border: 0;
 }
 
 .card .image_cropper {
