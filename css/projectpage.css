@@ -35,6 +35,19 @@ h2 {
     width: 32rem;
 }
 
+.card a:not(.deliverables-link) {
+    text-decoration: underline;
+}
+
+.deliverables-link {
+    color: #ead281;
+    font-weight: 600;
+}
+
+.deliverables-link:hover{
+    font-weight: 700;
+}
+
 @media screen and (max-width: 768px) {
     .sprints{
         padding: 2rem 3rem;
